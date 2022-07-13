@@ -1,0 +1,127 @@
+/*
+Theme Name: Joana Mertz — Product UX/UI Designer
+
+  1. >>> Headr Style
+  2. >>> Banner Style
+  3. >>> Case Studies Style
+  4. >>> Footer Style
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------*/
+:root {
+	--font_14:0.875rem;
+	--font_30:1.875rem;
+	--font_36:2.25rem;
+	--font_48:3rem;
+	--margin_30:1.875rem;
+	--margin-54:3.375rem;
+	--margin-60:3.75rem;
+	--margin-100:6.25rem;
+	--margin-120:7.5rem;   
+}
+html {font-family: 'Inter', sans-serif;background-color:#FFF}
+body {font-family: 'Inter', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:400;font-style: normal; color: #000; font-size: var(--font_14)}
+a,a:hover,a:focus,i,input,button,input:focus,.transition1 {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
+iframe {border: 0;outline: none;}
+::-moz-selection {background: var(--red);text-shadow: none;color:var(--white)}
+::selection {background:var(--red);text-shadow: none;color:var(--white)}
+img {max-width: 100%;border: none;outline: none;height: auto;}
+input,textarea {border-radius: 0;resize: none;}
+ul {padding: 0;margin: 0;}
+@font-face {
+font-family: 'DM Serif Display', serif;
+font-family: 'Inter', sans-serif;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {background-color: transparent;background-image: none;color:#000;}
+/* 1.2 Typography */
+h1,h2,h3,h4,h5,h6 {font-family: 'DM Serif Display', serif;}
+figure{ margin: 0 }
+svg,img { max-width: 100%; height: auto; }
+.ds-arrow {background: #00B7CC;height:0.125rem;width:3.125rem;position: relative;cursor: pointer; display: inline-block; vertical-align: middle;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; margin-left:0.5rem}
+.ds-arrow:before, .ds-arrow:after {content: "";background: #00B7CC;position: absolute;height:0.125rem;width:0.8125rem;}
+.ds-arrow:before {right: -0.25rem;bottom: -0.25rem;transform: rotate(-45deg);}
+.ds-arrow:after {right: -0.25rem;top: -0.25rem;transform: rotate(45deg);}
+.ds-button-arrow:hover .ds-arrow{ margin-left:0.9375rem }
+/*-----------------------------------------------------------------
+  1. >>> Headr Style
+----------------------------------------------------------------*/
+.ds-header{ padding-top:4.875rem; padding-bottom:var(--margin-100);  }
+.ds-logo{font-family: 'DM Serif Display', serif; color:#B3C0D6; font-size:var(--font_30) ;border: 1px solid #B3C0D6; border-radius:100%; width: 3.875rem; height: 3.875rem; text-align: center; display: flex; justify-content: center; align-items: center; margin: 0 auto}
+.ds-logo:hover{color:#B3C0D6;}
+/*-----------------------------------------------------------------
+  2. >>> Banner Style
+----------------------------------------------------------------*/
+.ds-banner-section{ text-align: center; margin-bottom: var(--margin-120);  }
+.ds-banner-section h1{font-family: 'Inter', sans-serif; font-size: var(--font_30); line-height: var(--font_36); margin-bottom: var(--margin-60); }
+.ds-banner-section h2{ font-size: 4.375rem; line-height: 5rem; margin-bottom: var(--margin-100); }
+.ds-banner-section figure{ margin-bottom: var(--margin-54) }
+.ds-banner-section p{font-size:var(--font_30);line-height:var(--font_48); margin-bottom: var(--margin-60); }
+.ds-button{ display: inline-block; text-transform: uppercase; color: #FFF; background-color: #45CD86; border-radius:var(--font_30); padding:1.125rem 3.625rem; font-weight: 700; letter-spacing: 1px }
+.ds-button:hover{ color: #FFF; background-color:#3bb173  }
+
+/*-----------------------------------------------------------------
+  3. >>> Case Studies Style
+----------------------------------------------------------------*/
+.ds-case-studies h2{font-size:var(--font_30); text-align: center; position:relative; margin-bottom: var(--margin-120);}
+.ds-case-studies h2 span{ position: relative; z-index: 1 }
+.ds-case-studies h2:after{ content: ""; position: absolute; bottom: 0; left: 0; right: 0; background-color:#FFC8C6; height: 0.9375rem; width: 10.125rem; margin: 0 auto }
+
+.ds-case-studies-list{margin-bottom: var(--margin-120);}
+.ds-case-studies-list figure{ margin-bottom: var(--margin-60); }
+.ds-hedding{ font-size: var(--font_48); margin-bottom: var(--font_14); }
+.ds-tools{ font-weight: 700 }
+.ds-case-studies-list p{ font-size: 1.375rem; line-height:var(--font_36); margin-bottom: 2.5rem }
+.ds-view-button{font-weight: 600; font-size: 1rem; color: #000}
+.ds-view-button i{ display: inline-block; vertical-align: middle; color: #00B7CC; font-size: 1.625rem; }
+.ds-view-button:hover{color: #00B7CC; }
+
+.ds-case-studies-details{ padding-bottom: 5.25rem; }
+.ds-case-studies-details .ds-case-studies-list{ margin-bottom: 2.75rem; }
+.ds-case-studies-details .ds-tools{ margin-bottom: var(--margin-60); display: block; }
+/*-----------------------------------------------------------------
+  4. >>> Footer Style
+----------------------------------------------------------------*/
+.ds-footer{ background-color: #262626; padding:var(--margin-120) 0; }
+.ds-lets_section h4{ color: #FFF;font-family: 'Inter', sans-serif; font-weight: 700; font-size:4.375rem; margin-bottom: 1.0625rem  }
+.ds-lets_section span{ color: #797979; font-size:1.125rem;  }
+
+.ds-email_social{ display: flex; justify-content: space-between; align-items: center; padding:6.375rem 0; }
+.ds-email{ color: #00B7CC; font-size: var(--font_30); }
+.ds-email:hover{text-decoration: underline;color: #00B7CC;}
+.ds-social{list-style: none; padding: 0; margin: 0; display: flex;}
+.ds-social li{ margin-right:4rem; }
+.ds-social li:last-child{ margin-right: 0 }
+.ds-social a{ color: #797979; font-size: 2.5625rem; }
+.ds-social a:hover{ color: #FFF }
+.ds-copyright{ display: block; text-align: center; color: #797979; font-size:1.125rem }
+.ds-copyright a{color: #797979;}
+.ds-copyright a:hover{color: #797979; text-decoration: underline;}
+/*-------------------------------------------------------------------------------
+ XS Style @media (max-width: 767px) 
+-------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+.row{ margin-left:0; margin-right:0  }
+.container{ padding-left:1.25rem; padding-right: 1.25rem;  }
+.ds-header{ padding:3.75rem 0  }
+.ds-case-studies h2,.ds-banner-section,.ds-banner-section h2,.ds-case-studies-list{ margin-bottom: var(--margin-60) }
+.ds-tools,.ds-case-studies-details .ds-tools{ display: block; margin-bottom: 1.25rem; }
+.ds-case-studies-list p{ margin-bottom:1.25rem;  }
+.ds-footer{padding:6.25rem 0 }
+.ds-lets_section h4{ font-size:var(--font_48) }
+.ds-email_social{ flex-wrap: wrap; justify-content: center; }
+.ds-social{ margin-top:1.25rem;  }
+.ds-lets_section{ text-align: center; }
+.ds-email_social{ padding: 3.375rem 0 }
+.ds-case-studies-details{ padding-bottom: var(--margin-60)   }
+.ds-image-gallery{ padding-top: var(--margin_30) }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
